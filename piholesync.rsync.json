@@ -1,0 +1,32 @@
+{
+  "files": [
+    { "filename": "black.list", "restart": 1 },
+    { "filename": "blacklist.txt", "restart": 1 },
+    { "filename": "regex.list", "restart": 1 },
+    { "filename": "whitelist.list", "restart": 1 },
+    { "filename": "lan.list", "restart": 1 },
+    { "filename": "black.list", "restart": 1 },
+    { "filename": "adlists.list", "gravity": 1 }
+  ],
+  "folder": "/etc/pihole",
+  "targets": [
+    {
+      "ip": "10.1.0.1",
+      "user": "root",
+      "folder": "/mnt/user/appdata/pihole/pihole",
+      "dockerContainer": "pihole"
+    },
+    {
+      "ip": "10.1.2.4",
+      "user": "pi",
+      "folder": "/home/pi/docker/pihole/mnt/etc/pihole",
+      "dockerContainer": "pihole"
+    },
+    {
+      "ip": "10.1.2.11",
+      "user": "pi",
+      "folder": "/home/pi/docker/pihole/mnt/etc/pihole",
+      "dockerContainer": "pihole"
+    }
+  ]
+}
